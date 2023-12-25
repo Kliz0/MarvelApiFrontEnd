@@ -2,23 +2,6 @@
 
 <html ng-app="myApp">
   <main class="main">
-    <div ng-controller="SelectController">
-      <select
-        ng-model="selectedCharacter"
-        ng-options="character.name for character in characters | orderBy:['!isFavorite','name']"
-      ></select>
-
-      <ul>
-        <li
-          ng-repeat="character in characters | orderBy:['!isFavorite','name']"
-        >
-          {{ character.name }}
-          <button ng-click="toggleFavorite(character)">
-            {{ character.isFavorite ? "Unfavorite" : "Favorite" }}
-          </button>
-        </li>
-      </ul>
-    </div>
   </main>
 </html>
 
