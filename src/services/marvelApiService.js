@@ -1,5 +1,5 @@
 angular.module('myApp').factory('marvelApiService', function($http) {
-    // var baseUrl = 'https://gateway.marvel.com/v1/public/';
+    var baseUrl = 'https://localhost:7142/api/';
     // var apiKey = '';
 
     return {
